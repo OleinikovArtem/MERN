@@ -1,0 +1,31 @@
+{
+  "name": "mern-v",
+  "version": "1.0.0",
+  "description": "mern stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Ole Arte <avebyntar@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
